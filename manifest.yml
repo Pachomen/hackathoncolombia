@@ -1,0 +1,20 @@
+---
+declared-services:
+  # Conversation Service
+  Conversacion-Ana:
+    label: conversation
+    plan: free
+  # Speech to Text Service
+  VozDonAna:
+    label: speech_to_text
+    plan: lite
+  # Text to Speech
+  TextoVozDonAna:
+    label: text_to_speech
+    plan: lite
+applications:
+  # Application name
+- name: Sabana2
+  command: npm start
+  path: .
+  memory: 512M
